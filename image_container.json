@@ -1,0 +1,7 @@
+`[ 
+	{
+		"Description":"file_name",
+		"Format":"ova",
+		"Url":"s3://bucket_name/file_name.ova"
+	}
+]
