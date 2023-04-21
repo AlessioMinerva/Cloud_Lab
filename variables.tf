@@ -7,7 +7,7 @@ variable "environment" {}
 # Vpc variables 
 variable "vpc_cidr" {}
 variable "public_subnet_az1_cidr" {}
-variable "private_app_subnet_az1_cidr" {}
+variable "private_subnet_az1_cidr" {}
 
 # Security Groups variables
 variable "ssh_ip" {}
