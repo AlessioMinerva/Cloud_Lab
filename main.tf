@@ -36,7 +36,7 @@ module "ec2_attacker" {
   key                        = var.key
 }
 
-# Create EC2 ytarget
+# Create EC2 Target
 module "ec2_target" {
   source                    = "./Modules/EC2_Target"
   project_name              = local.project_name
