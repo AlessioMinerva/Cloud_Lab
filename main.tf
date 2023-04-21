@@ -42,6 +42,6 @@ module "ec2_target" {
   project_name              = local.project_name
   environment               = local.environment
   ami_target                = var.ami_target
-  private_app_subnet_az1_id = module.vpc.private_subnet_az1_id
+  private_subnet_az1_id = module.vpc.private_subnet_az1_id
   target_security_group_id  = module.security_group.target_security_group_id
 }
