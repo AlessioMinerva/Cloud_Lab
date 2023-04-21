@@ -3,7 +3,7 @@ resource "aws_instance" "ec2_instance" {
   ami                    = var.ami_target
   instance_type          = "t2.micro"
   subnet_id              = var.private_subnet_az1_id
-  vpc_security_group_id  = var.target_security_group_id
+  vpc_security_group_ids  = [var.target_security_group_id]
 
    tags = {
     Name = "${var.project_name}-${var.environment}-target-EC2"
