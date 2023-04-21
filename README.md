@@ -22,4 +22,6 @@ Two security groups, one for the public subnet and one for the private subnet. T
 
 - `variables.tf`: This file declares the input variables that are used in the Terraform configuration. It specifies the variable names, types, and default values.
 
+- `output.tf`: This file will print on the terminal the public IP of the attacker EC2 to ssh into and the private IP of the target EC2.
+
 Users can use these files as a starting point to deploy their own AWS infrastructure with Terraform. They can modify the files to fit their specific needs, such as changing the region, number of subnets, or security group rules. However, it's important to keep in mind that deploying infrastructure in the cloud carries inherent risks and potential security vulnerabilities. It's the responsibility of the user to ensure that their infrastructure is secure and follows best practices for cloud security.
