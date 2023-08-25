@@ -1,5 +1,10 @@
 pipeline {
-  agent any
+  agent {
+    node {
+      label 'jenkins-slave-agent'
+    }
+
+  }
   stages {
     stage('git') {
       agent {
